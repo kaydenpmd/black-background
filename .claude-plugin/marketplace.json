@@ -1,0 +1,5 @@
+{
+  "name": "black-background",
+  "owner": { "name": "kaydenpmd" },
+  "plugins": [{ "name": "black-background", "source": "./" }]
+}
