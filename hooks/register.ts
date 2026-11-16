@@ -8,6 +8,9 @@ import { makeColors } from './make-colors.js'
 const { theme, problems } = makeColors({
   label: 'Black',
   only: 'dark',
+  // The app's own stronger borders and focus rings: cards share the chat
+  // area's colour, so their outline is all that sets them apart on black.
+  contrast: 'more',
   dark: {
     gray: {
       anchors: {
