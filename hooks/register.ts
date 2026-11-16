@@ -50,11 +50,15 @@ const { theme } = makeColors({
         'surface-1': '#000000',
         'surface-2': '#1c1c1e',
         'surface-3': '#2c2c2e',
+        // iOS's label (white) and secondary label, rgba(235, 235, 245, 0.6),
+        // as it shows on black: #8D8D93, measured on iOS 27.0 (#98989F on a
+        // #1C1C1E cell; design-research/apple/ios-system-colors). Muted text
+        // takes secondary label too: tertiary label, documented at 30%, comes
+        // out about 2.3:1 on black, and Desktop refuses a palette with text
+        // under 3:1. The grey ramp's shades 200 to 400 come out the same.
         'text-primary': '#ffffff',
-        // Not iOS's label colours: picked 15 Nov 2026 before the library was
-        // read.
-        'text-secondary': '#c7c7cc',
-        'text-muted': '#98989f',
+        'text-secondary': '#8d8d93',
+        'text-muted': '#8d8d93',
       },
     },
   },
